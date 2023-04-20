@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Maxime GUERIN</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon-32x32.png" />
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div>
+            <h1>Maxime GUERIN </h1>
+        </div>
+    </header>
+
+    <div class="titre">
+        <ul id="nav">
+            <li><a href="index.html">\x00\ Accueil</a></li>
+            <li><a href="index.html#contact">\x04\ Contact</a></li>
+            <li>
+                <div class="menu-cliquable">
+                    <button onclick="myFunction()" class="menu-bouton">Plus</button>
+                    <div id="mon-menu-cliquable" class="menu-cliquable-contenu">
+                        <a
+                            href="https://drive.google.com/drive/folders/1-DzE1XAxWEGoScgOrAUuTBeA9J5OX9OF?usp=share_link">\x05\
+                            Dossier Projets</a>
+                        <a href="annexe.html">\x06\ PIX / HTB / THM / RootMe</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="contenu">
+        <div class="deuxieme">
+            <h2>\x06\ PIX / HTB / THM / RootMe</h2>
+            <div class="carte">
+                <div class=" page-interieur">
+                    <div class="header">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                        <p>C:/portfolio/annexe.txt</p>
+                    </div>
+                    <p class="pres">
+                        Mes différents parcours sur les plateformes en ligne : <br><br> Code
+                        de certification PIX
+                        : <br> P-6PDCK267
+                        <a href="https://app.pix.fr/verification-certificat">voir ici</a> <br> <br>
+                        Starting Point fini sur Hack the Box <br> <br>
+                        Basic Pentesting completé à 45% pour l'instant sur Try Hack Me <br> <br>
+                        Root me : <br> <br><img src="/media/rootme.png" alt="" width="100%" height="auto"
+                            style="border-radius: 10px;">
+
+                    </p>
+                </div>
+            </div>
+            <footer style="padding-top:30px;"">
+            <p>Copyright &copy; 2023 Maxime Guerin</p>
+        </footer>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById(" mon-menu-cliquable").classList.toggle("montrer");
+        } window.onclick = function
+            (event) {
+                if (!event.target.matches('.menu-bouton')) {
+                    var
+                    dropdowns = document.getElementsByClassName("menu-cliquable-contenu"); var i; for (i = 0; i <
+                        dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i]; if (openDropdown.classList.contains('montrer')) { openDropdown.classList.remove('montrer'); }
+                    }
+                }
+        } </script>
+                <script src="./js/particles.js"></script>
+                <script src="./js/app.js"></script>
+
+</body>
+
+</html>
